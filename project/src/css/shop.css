@@ -1,0 +1,270 @@
+.discount_ad {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 10px 0;
+}
+
+.discount_ad h1 {
+  color: white;
+}
+
+.shop_content {
+  width: 100%;
+  min-height: 75.5vh;
+  display: flex;
+}
+
+.aside {
+  width: 450px;
+  background-color: white;
+  padding: 30px 50px;
+}
+
+.aside_search_container {
+  width: 106%;
+  display: flex;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.aside_search_container input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 10px 10px;
+}
+
+.aside_search_container input::placeholder {
+  font-size: 18px;
+}
+
+.aside_search_container i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.aside_search_container input:focus {
+  outline: none;
+}
+
+.categorie_dropdown {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 20px 10px;
+  align-items: center;
+}
+
+.categorie_dropdown i {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.categorie_dropdown_added {
+  animation: bounce 500ms ease-in-out;
+  display: flex;
+  padding-top: 17px;
+  justify-content: center;
+  border-bottom: 2px solid black;
+}
+
+.categorie_dropdown_added h1 {
+  font-size: 29px;
+  cursor: pointer;
+}
+
+.shop_content {
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scaleY(0);
+  }
+  70% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.products {
+  padding: 20px 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.products_box {
+  position: relative;
+  width: 18%;
+  border: 2px solid black;
+  min-height: 450px;
+  max-height: 500px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 1.5;
+  justify-content: space-between;
+}
+
+.products_box img {
+  width: 100%;
+  height: 300px;
+}
+
+.products_box h6 {
+  font-size: 16px;
+}
+
+.bottom_box {
+  display: flex;
+  width: 100%;
+  min-height: 20px;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.buy {
+  display: flex;
+  min-height: 20px;
+  width: 50%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.buy i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.buy p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.bottom_box h5 {
+  margin: 0;
+  margin-right: 5px;
+  font-size: 19px;
+}
+
+.categorie_dropdown_added h1 {
+  transition: transform 0.5s;
+}
+
+.categorie_dropdown_added h1:hover {
+  transform: scale(1.1);
+}
+
+.search_bar2 {
+  font-size: 20px;
+}
+
+@keyframes addedToCart {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+
+.alert {
+  padding: 12px;
+  position: absolute;
+  background-color: #00000085;
+  color: white;
+  border-radius: 1rem;
+  opacity: 0;
+  top: 65%;
+  right: 25%;
+  animation: addedToCart 2s ease;
+}
+
+@media (max-width: 800px) {
+  .shop_content {
+    flex-direction: column;
+  }
+
+  .aside {
+    width: 100%;
+  }
+
+  .aside_search_container {
+    width: 87%;
+    margin-bottom: 20px;
+  }
+
+  .aside_search_container i {
+    top: 15px;
+  }
+
+  .categorie_dropdown {
+    width: 87%;
+    padding: 20px 0;
+  }
+
+  .categorie_dropdown i {
+    top: 25px;
+  }
+
+  .categorie_dropdown_added h1 {
+    font-size: 17px;
+  }
+
+  .categorie_dropdown_added {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    width: 90%;
+  }
+
+  .categories-dropdown-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 87%;
+    align-items: center;
+  }
+
+  .products {
+    width: 87%;
+    justify-content: space-between;
+  }
+
+  .products_box {
+    width: 270px;
+  }
+
+  .discount_ad h1 {
+    font-size: 20px;
+  }
+}

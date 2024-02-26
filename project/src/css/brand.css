@@ -1,0 +1,73 @@
+.section1 {
+  width: 100%;
+  min-height: 65vh;
+  background-image: url("brand img 1.jpg");
+  background-position: 50% 5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text_brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  padding: 40px 40px;
+  line-height: 2.5;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  background-color: #00000069;
+  min-height: 59vh;
+}
+
+.text_brand span {
+  color: yellow;
+  font-size: 23px;
+}
+
+.text_brand h1 {
+  color: yellow;
+  font-size: 46px;
+  font-weight: 900;
+}
+
+.text_brand p {
+  font-size: 20px;
+  color: white;
+}
+
+.text_brand h3 {
+  color: white;
+  font-size: 30px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 65vh;
+  background-image: url("brand img 2.jpg");
+  background-position: 50% 5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 800px) {
+  .text_brand {
+    width: 94.7%;
+    padding: 20px 20px;
+    line-height: 2.5;
+    height: 65vh;
+  }
+
+  .text_brand h3 {
+    font-size: 24px;
+  }
+
+  .text_brand p {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+}
