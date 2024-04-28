@@ -35,7 +35,7 @@ To get a local copy up and running, follow these simple steps.
 - Install NPM packages
 - npm install
 - Start the development server
-- npm start
+- npm run dev
 - The application should now be running on http://localhost:3000.
 
 ## Usage
