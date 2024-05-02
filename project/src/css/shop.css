@@ -140,7 +140,7 @@
 
 .bottom_box {
   display: flex;
-  width: 100%;
+  min-width: 100%;
   min-height: 20px;
   justify-content: space-between;
   margin: 0;
@@ -149,7 +149,7 @@
 .buy {
   display: flex;
   min-height: 20px;
-  width: 50%;
+  min-width: 50%;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -247,7 +247,7 @@
     width: 90%;
   }
 
-  .categories-dropdown-content{
+  .categories-dropdown-content {
     display: flex;
     flex-direction: column;
     justify-content: center;

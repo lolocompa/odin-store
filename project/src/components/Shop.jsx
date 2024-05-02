@@ -22,7 +22,8 @@ export const Shop = () => {
   const [buy, setbuy] = useState(false);
   const [visible, setvisible] = useState(false);
   const [products, setProducts] = useState([]);
-  const { search, setsearch, setcart, category, setcategory } = useContext(app_context);
+  const { search, setsearch, setcart, category, setcategory } =
+    useContext(app_context);
   const [addedItem, setAddedItem] = useState(null);
 
   useEffect(() => {
@@ -78,7 +79,7 @@ export const Shop = () => {
 
     setTimeout(() => {
       setbuy(false);
-      setAddedItem(null)
+      setAddedItem(null);
     }, 2000);
   }
 
@@ -237,8 +238,10 @@ export const Shop = () => {
                     }}
                   ></i>
                 </div>
-                <h5>${product.price}</h5>
-                {buy && addedItem && addedItem.id === product.id && <span className="alert">Added to cart</span>}
+                <h5>${Math.round(parseFloat(product.price))}</h5>
+                {buy && addedItem && addedItem.id === product.id && (
+                  <span className="alert">Added to cart</span>
+                )}
               </div>
             </div>
           ))}

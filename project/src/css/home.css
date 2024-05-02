@@ -67,7 +67,7 @@
 
 .slider {
   width: 80%;
-  height: 800px;
+  height: 80vh;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -81,7 +81,7 @@
 
 .slides {
   width: 500%;
-  height: 800px;
+  height: 80vh;
   display: flex;
   overflow: hidden;
 }
@@ -99,7 +99,7 @@
 .navigation_manual {
   position: absolute;
   width: 400px;
-  margin-top: -40px;
+  margin-top: -5vh;
   display: flex;
   justify-content: center;
   width: 78.8vw;
@@ -143,7 +143,7 @@
   display: flex;
   width: 800px;
   justify-content: center;
-  margin-top: 758.9px;
+  margin-top: 75vh;
   width: 78.7vw;
 }
 
@@ -295,6 +295,5 @@
 
   .fotter2 {
     background: linear-gradient(175deg, #c90d0de6, #6e0916);
-
   }
 }
