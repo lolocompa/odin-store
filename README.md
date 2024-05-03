@@ -2,6 +2,9 @@
 
 Odin Store is a modern, React-based e-commerce application designed to provide a seamless shopping experience. This project leverages the latest web technologies to ensure a fast, responsive, and intuitive user interface.
 
+## Try it yourself!
+https://lorenzo-store.netlify.app/
+
 ## Features
 
 - **Product Browsing**: Users can explore a variety of products categorized for easy navigation.
